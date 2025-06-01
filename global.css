@@ -1,0 +1,22 @@
+:root{
+     --accent1: orange;
+     --accent2: black;
+     --accent3: grey;
+     --accent4: rgb(0, 0, 25);
+     --bg: whitesmoke;
+     --bglight: white;
+     --black-trs: rgba(0, 0, 0, 0.65);
+     --white-trs: rgba(255, 255, 255, 0.10);
+}
+body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body:not(input){
+     user-select: none;
+}
+body::-webkit-scrollbar{
+     display: none;
+}
+iframe{
+     border: none;
+}

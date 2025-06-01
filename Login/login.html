@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="../global.css">
+          <link rel="stylesheet" href="style.css">
+          <title>Login</title>
+     </head>
+
+     <body>
+          <div id="login-panel" class="inactive">
+               <div id="user-panel">
+                    <div id="profile-pic"></div>
+                    <div id="user-info">Soumyadeep Roy</div>
+               </div>
+               <div id="input-panel">
+                    <form action="" id="form">
+                         <input id="password" type="password" placeholder="Enter password..." required
+                              style="padding-left: 20px; font-size: 90%;"
+                         >
+                         <div style="display: inline-flex; align-items: center;">
+                              <input type="checkbox" id="show-password" style="outline: none;">
+                              <label for="show-password" style="color: var(--accent3);">Show password...</label>
+                         </div>
+                         <button id="submit" type="submit">LOGIN</button>
+                    </form>
+               </div>
+          </div>
+
+          <div id="hint"
+          style="position: fixed; bottom: 0; right: 0; margin: 0 5% 1% 0; padding: 0 1%; font-size: 140%; color: white; background-color: rgba(0, 0, 0, 0.15);">
+          </div>
+
+          <div id="loading-panel" class="loading-off">
+               <div id="loading-circle"></div>
+               <h1>Logging in . . .</h1>
+          </div>
+     </body>
+
+     <script src="script.js"></script>
+</html>
