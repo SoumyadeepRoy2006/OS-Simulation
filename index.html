@@ -16,12 +16,46 @@
                <p id="time" style="width: 40%;"></p>
                <p id="date" style="width: 40%;"></p>
           </div>
-
+          
           <div class="overlay"></div>
+          
+          <div id="wallpaper-panel" class="wallpaper-panel-hidden">
+               <h2>Wallpapers</h2>
+               <div id="wallpapers">
+                    
+                    <div id="wallpaper0" class="wallpaper-select">
+                         <img src="Wallpapers/BG.avif">
+                         <p>Default Wallpaper</p>
+                    </div>
+                    
+                    <div id="wallpaper1" class="wallpaper-select">
+                         <img src="Wallpapers/Wallpaper1.jpg">
+                         <p>Wallpaper 1</p>
+                    </div>
+                    
+                    <div id="wallpaper2" class="wallpaper-select">
+                         <img src="Wallpapers/Wallpaper2.jpg">
+                         <p>Wallpaper2</p>
+                    </div>
+                         
+                    <!-- 
+                    
+                    <div id="wallpaper2" class="wallpaper-select">
+                         <img src="">
+                         <p>Wallpaper2</p>
+                    </div>
+                         
+                         *copy and paste -->
+               </div>
+          </div>
+          
+
           <div id="options-hover">
                <div class="options-panel">
                     <h1>Options:</h1>
-                    <p class="option">Wallpaper</p>
+                    <p class="option" onClick="openWallpaper()">Wallpaper</p>
+
+
                     <div id="logout-button" class="option">
                          <img src="Main/Images/logout.png" style="margin-right: 2%; height: 140%;">
                          <p style="padding-bottom: 1.2%; font-size: 2vh;">Logout</p>

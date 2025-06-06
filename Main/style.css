@@ -85,6 +85,59 @@ body::-webkit-scrollbar{
      background-color: var(--accent1);
      border-bottom: none;
 }
+#wallpaper-panel{
+     display: none;
+     position: relative;
+     width: 500px; height: 400px;
+     padding: 1% 3%;
+     position: fixed;
+     left: 50%; top: 50%;
+
+     color: var(--bg);
+
+     background-color: var(--accent4);
+     border-radius: 2em;
+     overflow: hidden;
+     backdrop-filter: blur(50px);
+}
+.wallpaper-panel-hidden{
+     transform: translate(-50%, -50%) scale(1);
+}
+.wallpaper-panel-visible{
+     transform: translate(-50%, -50%) scale(1);
+}
+#wallpapers{
+     height: 82%;
+     overflow: scroll;
+}
+#wallpapers::-webkit-scrollbar{
+     display: none;
+}
+.wallpaper-select{
+     display: inline-flex;
+     flex-direction: column;
+     margin: 1.5% 3.5%;
+     width: 25%;
+     height: 28%;
+
+     overflow: hidden;
+     border: 1px solid var(--accent1);
+     border-radius: 1em;
+
+     cursor: pointer;
+
+     transition: transform 0.05s ease-in;
+}
+.wallpaper-select>img{
+     aspect-ratio: 16/9;
+}
+.wallpaper-select>p{
+     text-align: center;
+     margin-top: 0;
+}
+.wallpaper-select:hover{
+     transform: scale(1.1);
+}
 #logout-button{
      margin-top: auto;
      margin-bottom: 20%;
